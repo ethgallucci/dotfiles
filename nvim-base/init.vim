@@ -86,7 +86,6 @@ Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 Plug 'stsewd/sphinx.nvim', {'do': ':UpdateRemotePlugins'}
 
 " ### Rust
-
 Plug 'rust-lang/rust.vim'
 
 
@@ -121,7 +120,6 @@ set spelllang=en,es
 
 set nowrap  " No wrap lines (display long lines)
 set number  " Display line numbers
-set relativenumber  " Show relative line numbers
 set cursorline  " Highlight current line
 
 set foldmethod=expr
@@ -150,10 +148,9 @@ set grepformat=%f:%l:%c:%m
 " ## Theme & Colorscheme
 
 set termguicolors  " Active true colors on terminal
-let g:tokyonight_italic_comments = v:false
 let g:tokyonight_style = 'storm'
 set background=dark
-colorscheme tokyonight
+colorscheme default
 
 " ## Lightline
 " {{{lightline.vim
