@@ -150,7 +150,7 @@ set grepformat=%f:%l:%c:%m
 set termguicolors  " Active true colors on terminal
 let g:tokyonight_style = 'storm'
 set background=dark
-colorscheme default
+colorscheme tokyonight
 
 " ## Lightline
 " {{{lightline.vim
