@@ -44,6 +44,8 @@ Plug 'josa42/vim-lightline-coc'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'rust-lang/rust.vim'
 Plug 'jaredgorski/spacecamp'
+Plug 'folke/twilight.nvim'
+Plug 'dracula/vim'
 
 call plug#end()
 
@@ -51,7 +53,7 @@ call plug#end()
 set termguicolors
 let g:tokyonight_style = 'night'
 set background=dark
-colorscheme spacecamp
+colorscheme tokyonight
 
 " ## Nvim-Tree
 "
@@ -97,15 +99,13 @@ let g:nvim_tree_icons = {
     \   }
     \ }
 
-nnoremap <C-n> :NvimTreeToggle<CR>
-nnoremap <leader>r :NvimTreeRefresh<CR>
-nnoremap <leader>n :NvimTreeFindFile<CR>
 
 lua << EOF
 require('nvim-tree').setup()
 EOF
 
 " ## Settings
+"
 set encoding=UTF-8
 set title
 set mouse=a
@@ -137,7 +137,7 @@ set statusline+=%{NearestMethodOrFunction()}
 autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
 
 let g:lightline = {
-\	'colorscheme': 'PaperColor',
+\	'colorscheme': 'dracula',
 \	'active': {
 \		'left': [ [ 'mode', 'paste' ],
 \			  [ 'readonly', 'filename', 'modified', 'method'] ]
@@ -145,5 +145,12 @@ let g:lightline = {
 \	'component_function': {
 \		'method': 'NearestMethodOrFunction'
 \	},
-\
 \}
+
+" ## Re-mappings
+nnoremap T :NvimTreeToggle
+nnoremap A :vsplit
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
+nnoremap G :Gsplit
+nnoremap M :Vista coc
