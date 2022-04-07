@@ -128,3 +128,9 @@ export GPG_TTY=$(tty)
 
 # Starship
 eval "$(starship init zsh)"
+
+export PATH="/Users/ethangallucci/.espressif/tools/xtensa-esp32-elf-clang/esp-13.0.0-20211203-x86_64-apple-darwin/bin/:$PATH"
+export LIBCLANG_PATH="/Users/ethangallucci/.espressif/tools/xtensa-esp32-elf-clang/esp-13.0.0-20211203-x86_64-apple-darwin/lib/"
+export PIP_USER=no
+
+alias ls='exa -l'

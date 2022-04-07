@@ -46,6 +46,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'jaredgorski/spacecamp'
 Plug 'folke/twilight.nvim'
 Plug 'dracula/vim'
+Plug 'lu-ren/SerialExperimentsLain'
 
 call plug#end()
 
@@ -53,7 +54,7 @@ call plug#end()
 set termguicolors
 let g:tokyonight_style = 'night'
 set background=dark
-colorscheme tokyonight
+colorscheme SerialExperimentsLain
 
 " ## Nvim-Tree
 "
