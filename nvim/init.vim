@@ -1,3 +1,6 @@
+" ethan gallucci nvim plugins,
+" configs, and remappings
+
 call plug#begin()
 
 Plug 'nvim-treesitter/playground'
