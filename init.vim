@@ -1,6 +1,3 @@
-" ethan gallucci nvim plugins,
-" configs, and remappings
-
 call plug#begin()
 
 Plug 'nvim-treesitter/playground'
@@ -50,6 +47,7 @@ Plug 'jaredgorski/spacecamp'
 Plug 'folke/twilight.nvim'
 Plug 'dracula/vim'
 Plug 'lu-ren/SerialExperimentsLain'
+Plug 'xiyaowong/nvim-transparent'
 
 call plug#end()
 
@@ -57,7 +55,7 @@ call plug#end()
 set termguicolors
 let g:tokyonight_style = 'night'
 set background=dark
-colorscheme SerialExperimentsLain
+colorscheme spacecamp 
 
 " ## Nvim-Tree
 "

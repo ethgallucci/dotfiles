@@ -10,13 +10,13 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ethangallucci/.oh-my-zsh"
+export ZSH="/home/ethangallucci/.oh-my-zsh"
 export TERM=xterm-256color
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 SETHEME='powerlevel10k/powerlevel10k'
-ZSH_THEME='afowler'
+ZSH_THEME='re5et'
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -77,7 +77,6 @@ ZSH_THEME='afowler'
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
@@ -126,11 +125,5 @@ export PATH=$PATH:$(go env GOPATH)/bin
 #scrt
 export GPG_TTY=$(tty)
 
-# Starship
-eval "$(starship init zsh)"
-
-export PATH="/Users/ethangallucci/.espressif/tools/xtensa-esp32-elf-clang/esp-13.0.0-20211203-x86_64-apple-darwin/bin/:$PATH"
-export LIBCLANG_PATH="/Users/ethangallucci/.espressif/tools/xtensa-esp32-elf-clang/esp-13.0.0-20211203-x86_64-apple-darwin/lib/"
-export PIP_USER=no
-
-alias ls='exa -l'
+alias ls='exa -l -a'
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
