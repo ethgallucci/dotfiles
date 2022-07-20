@@ -1,0 +1,6 @@
+[submodule "dwm"]
+	path = dwm
+	url = https://github.com/ethgallucci/dwm
+[submodule "st"]
+	path = st
+	url = https://github.com/ethgallucci/st
