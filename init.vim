@@ -55,7 +55,7 @@ call plug#end()
 set termguicolors
 let g:tokyonight_style = 'night'
 set background=dark
-colorscheme spacecamp 
+colorscheme moonfly 
 
 " ## Nvim-Tree
 "
